@@ -1,10 +1,10 @@
 import pandas as pd
 import re
 
-# Define log file path
+# log file path
 auth_log = "/var/log/auth.log"
 
-# Extract SSH login attempts
+# SSH login attempts
 def parse_ssh_log(file_path):
     data = []
     with open(file_path, "r") as file:
@@ -18,7 +18,7 @@ def parse_ssh_log(file_path):
     df = pd.DataFrame(data, columns=["Timestamp", "Status", "User", "IP"])
     return df
 
-# Parse logs and save to CSV
+# parse andn save to CSV
 df = parse_ssh_log(auth_log)
 df.to_csv("ssh_logs.csv", index=False)
 print(df.head())
