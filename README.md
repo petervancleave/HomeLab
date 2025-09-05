@@ -1,4 +1,4 @@
-# Home-Lab-Projects-Learning
+# Home Labs
 repo to contain my homelab projects and other learning
 
 
