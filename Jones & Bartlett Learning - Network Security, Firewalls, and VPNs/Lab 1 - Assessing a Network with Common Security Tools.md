@@ -618,5 +618,3 @@ Next, you will need to conduct some additional reconnaissance on the firewall it
 <img width="1122" height="711" alt="Screenshot 2025-09-07 175805" src="https://github.com/user-attachments/assets/fbd391eb-d535-475e-b4ac-74eb368009b4" />
 <img width="1361" height="647" alt="Screenshot 2025-09-07 175743" src="https://github.com/user-attachments/assets/b935c4d6-9fc8-4614-a3a1-f95d45e07b79" />
 
-SS45
-
