@@ -31,7 +31,7 @@ Apply what was learned in section 1 with less guidance and different deliverable
 Section 3:
 Explore the virtual environment to answer a set of questions and challenges that allow you to use the skills you learned in the lab to conduct independent, unguided work - similar to what might be encountered in a real-world situation.
 
-SS 1
+<img width="1435" height="827" alt="Screenshot 2025-09-07 161154" src="https://github.com/user-attachments/assets/00c6596e-750e-4b33-a6e5-7fde5d1f945f" />
 
 <u>Learning Objectives</u>
 
@@ -51,7 +51,7 @@ The following virtual machines will be used:
 - AttackLinux01 (Kali Linux)
 - RemoteWindows01 (Windows Server 2019)
 
-SS 2
+<img width="937" height="555" alt="Screenshot 2025-09-07 163038" src="https://github.com/user-attachments/assets/0a32c8cc-d009-4ba6-b684-f1eb7453b06e" />
 
 # Section 1,
 
@@ -61,12 +61,14 @@ On the vWorkstation taskbar, **click** the **Command Prompt icon** to open a new
 
 At the command prompt, **type ipconfig** and **press Enter** to display basic information about the vWorkstation’s network adapters.
 
-SS3
+<img width="1417" height="626" alt="Screenshot 2025-09-07 163925" src="https://github.com/user-attachments/assets/f1cad158-4bf5-4b20-9857-2bb03822e2db" />
+
 
   
 At the command prompt, **type ipconfig /all** and **press Enter** to display detailed information about the vWorkstation’s network adapters.
 
-SS4
+<img width="1680" height="718" alt="Screenshot 2025-09-07 164042" src="https://github.com/user-attachments/assets/ed88a0a1-6653-4e27-9763-ab4f124417b6" />
+
 
 vWorkstation
 ```cmd
@@ -89,7 +91,7 @@ On the Lab View toolbar, **select TargetWindows01** from the Virtual Machine dro
 
 **Repeat steps 1-3** on TargetWindows01.
 
-SS5
+<img width="1438" height="810" alt="Screenshot 2025-09-07 164435" src="https://github.com/user-attachments/assets/3939a69c-5e90-48fd-bcb2-f4a6911bf3d2" />
 
 TargetWindows01
 ```cmd
@@ -157,7 +159,7 @@ On the Lab View toolbar, **select vWorkstation** from the Virtual Machine drop-d
 
 At the command prompt, **type arp** and **press Enter** to display the help guide for the ARP utility.
 
-SS6
+<img width="865" height="788" alt="Screenshot 2025-09-07 164610" src="https://github.com/user-attachments/assets/9173653b-e809-4276-bce1-ec761189156c" />
 
 At the command prompt, **type arp -a** and press Enter to display the current ARP cache for the vWorkstation.
 
@@ -245,25 +247,25 @@ At the command prompt, **type exit** and **press Ente**r to close the command pr
 
 On the vWorkstation desktop, **double-click** the **NetworkAssessment file** to open it in OpenOffice Calc.
 
-SS7
+<img width="645" height="736" alt="Screenshot 2025-09-07 165401" src="https://github.com/user-attachments/assets/d37bad18-077d-4043-907e-7a0bac19b980" />
 
 **Complete** the **LAN tab** using the information obtained from the ipconfig and ARP utilities.
 
 (We can do this using ipconfig /all and arp -a)
 
-SS8
+<img width="1906" height="775" alt="Screenshot 2025-09-07 170054" src="https://github.com/user-attachments/assets/67a675b5-e3ab-4f57-9be3-8a331b835538" />
 
 <u>Part 2 - Analyze Network Traffic</u>
 
 On the vWorkstation desktop, **double-click** the **Wireshark icon** to open the Wireshark application.
 
-SS9
+<img width="760" height="831" alt="Screenshot 2025-09-07 170436" src="https://github.com/user-attachments/assets/96d639ff-68b8-4fa8-8a2a-08dea1afd79d" />
 
 In the Wireshark window, **click** the **Student interface** to select the network interface that Wireshark will use to capture traffic.
 
 From the Wireshark toolbar, **click** the **Start Capture button (the blue shark fin)** to begin the capture session.
 
-SS10
+<img width="1757" height="772" alt="Screenshot 2025-09-07 170541" src="https://github.com/user-attachments/assets/ef2f6311-7cb4-4cf0-b0ce-2b7367b0165d" />
 
 **Minimize** the **Wireshark window**.
 
@@ -271,21 +273,21 @@ On the vWorkstation desktop, **double-click** the **Nmap - Zenmap GUI icon** to 
 
 On the vWorkstation desktop, **double-click** the **Nmap - Zenmap GUI icon** to open the Zenmap application.
 
-SS11
+<img width="552" height="762" alt="Screenshot 2025-09-07 170654" src="https://github.com/user-attachments/assets/5fe61d75-9dc3-44d1-bab7-e8c7b5f789ab" />
 
 In the Zenmap window, **type 172.30.0.1** (the internal firewall interface) in the _Target_ box and **select Ping scan** from the Profile drop-down menu, then **click Scan** to start the scan.
 
-SS12
+<img width="721" height="545" alt="Screenshot 2025-09-07 170737" src="https://github.com/user-attachments/assets/1eca649c-1e45-4a91-89a2-a363a898a8f8" />
 
 **Restore** the **Wireshark window**.
 
 In the Wireshark window, **type icmp** in the Filter box and **press Enter** to filter the results to show only the ping traffic.
 
-SS13
+<img width="1915" height="780" alt="Screenshot 2025-09-07 170841" src="https://github.com/user-attachments/assets/622b9450-bf10-4c11-b9cf-3ef7ab896695" />
 
 On the Wireshark toolbar, **click** the **Clear button** (the x) to remove the ICMP filter, then **type arp** in the Filter box and **press Enter** to filter the results to show only ARP-related traffic.
 
-SS14
+<img width="1896" height="813" alt="Screenshot 2025-09-07 170913" src="https://github.com/user-attachments/assets/d84f3fb0-94fc-4dd2-a1df-d91c09aaf64d" />
 
 **Review** the ARP packet results and **locate** a packet that lists the vWorkstation as the source and the firewall’s internal interface as the destination.
 
@@ -293,7 +295,7 @@ We can do so by identifying the vWorkstation using its MAC address.
 
 00-50-56-BD-31-02
 
-SS15
+<img width="1867" height="642" alt="Screenshot 2025-09-07 171211" src="https://github.com/user-attachments/assets/0d3a0818-3e74-46af-a71e-5e0fa37a2500" />
 
 On the Wireshark toolbar, **click** the **Clear button** to remove the ARP filter.
 
@@ -303,25 +305,25 @@ In the Zenmap window, **select Regular scan** from the Profile drop-down list an
   
 If you did not minimize the Wireshark window, you should see the traffic generated by nmap captured in real-time.
 
-SS16
+<img width="1912" height="822" alt="Screenshot 2025-09-07 171347" src="https://github.com/user-attachments/assets/4db65e1b-c28d-4c1b-8be0-bc1b402043a5" />
 
 **Repeat steps 8 and 10** to observe whether the Regular scan generated additional ICMP and ARP traffic.
 
-SS17
+<img width="1900" height="827" alt="Screenshot 2025-09-07 171418" src="https://github.com/user-attachments/assets/00988311-4f69-4d0f-ace8-497a001d4e71" />
 
 In the Zenmap window, **select Intense scan** from the Profile drop-down list and **click Scan** to start a new scan.
 
 *This scan will take several minutes to complete. If you did not minimize the Wireshark window, you should see the traffic generated by nmap captured in real-time. While the scan is running, compare the command for this scan with that of the Ping scan. In this case, Nmap is directed to scan the IP address (**172.30.0.1**) as quickly as possible (**-T4**), to attempt to detect the operating system (**-A**), and to return as much information (verbose results) as it can (**-v**). You should notice that Wireshark has already captured substantially more traffic than the prior two scans.*
 
-SS18
+<img width="1905" height="825" alt="Screenshot 2025-09-07 171522" src="https://github.com/user-attachments/assets/69e15e63-156b-40d3-a81c-f4cd3a8aa3a7" />
 
 When the scan is complete, **restore** the **Wireshark window**.
 
 **Repeat steps 8 and 10** to observe whether the Intense scan generated additional ICMP and ARP traffic.
 
-SS19
+<img width="1912" height="821" alt="Screenshot 2025-09-07 171649" src="https://github.com/user-attachments/assets/3268e511-4615-480d-a980-1b56da241e2d" />
 
-SS20
+<img width="1682" height="60" alt="Screenshot 2025-09-07 171713" src="https://github.com/user-attachments/assets/8505b39c-170d-46cc-9927-d3ffc0ea4125" />
 
 From the Wireshark tool bar, **click** the **Stop icon** to end the capture session
 
@@ -329,7 +331,7 @@ From the Wireshark tool bar, **click** the **Stop icon** to end the capture sess
 
 In the Zenmap window, **click** the **Ports/Hosts tab** to see which ports are open and listening.
 
-SS21
+<img width="922" height="722" alt="Screenshot 2025-09-07 171819" src="https://github.com/user-attachments/assets/8431b2f2-da22-4a9d-959c-cfccebb025b4" />
 
 End Section 1
 
@@ -339,7 +341,7 @@ End Section 1
 
 Use the Virtual Machine menu to **connect** to the **AttackLinux01 machine**.
 
-SS22
+<img width="1905" height="826" alt="Screenshot 2025-09-07 172000" src="https://github.com/user-attachments/assets/bdfaadea-2419-47a6-bd97-143b61d16cda" />
 
 At the AttackLinux01 login page, use the following credentials to **log in**:  
   
@@ -348,17 +350,17 @@ Password: **toor**
 
 From the AttackLinux01 menu bar, **click** the **Activities menu**, then **click** the **Terminal icon** on the Applications bar to open a new Terminal window.
 
-SS23
+<img width="1013" height="757" alt="Screenshot 2025-09-07 172057" src="https://github.com/user-attachments/assets/e1d61359-5f66-4c12-a733-d5e5ed7880ff" />
 
 At the command prompt, **execute ifconfig** to display information about AttackLinux01’s default network adapter.
 
-SS24
+<img width="952" height="715" alt="Screenshot 2025-09-07 172208" src="https://github.com/user-attachments/assets/da08387d-e9ba-44e3-80f5-9c0e339d7202" />
 
 At the command prompt, **execute ifconfig -a** to display information about all of AttackLinux01’s network adapters.
 
 *While AttackLinux01 has no additional network adapters to display, the **-a** switch is the ifconfig equivalent of the **/all** switch on Windows.*
 
-SS25
+<img width="850" height="627" alt="Screenshot 2025-09-07 172342" src="https://github.com/user-attachments/assets/fb694283-1440-45e5-8cdb-95a92a28c6f3" />
 
 **Close** the **Terminal window**.
 
@@ -511,7 +513,7 @@ Ethernet adapter TrueLab:
    NetBIOS over Tcpip. . . . . . . . : Disabled
 ```
 
-SS26
+<img width="1356" height="785" alt="Screenshot 2025-09-07 173618" src="https://github.com/user-attachments/assets/353381d6-9d11-4880-9206-426c63966fba" />
 
 <u>Part 2 - Analyze Network Traffic</u>
 
@@ -521,47 +523,49 @@ From the AttackLinux01 menu bar, **open** a new **Terminal window**.
 
 At the command prompt, **execute hping3 -h** to open the help screen for hping3.
 
-SS27
+<img width="797" height="592" alt="Screenshot 2025-09-07 173752" src="https://github.com/user-attachments/assets/6ef5e051-4cd4-4648-b3fa-c11ee91bb741" />
 
 At the command prompt, **execute hping3 -1 -c 1 202.20.1.1**.
 
 *This command uses ICMP mode (**-1**) to send a single packet (**-c 1**) to the external interface of the pfSense firewall/router (**202.20.1.1**).*
 
-SS28
+
+<img width="862" height="217" alt="Screenshot 2025-09-07 173828" src="https://github.com/user-attachments/assets/f1f84e3e-8c3e-4a88-8e33-4ff65b906084" />
 
 From the menu bar, **open** a second **Terminal window**.
 
 At the command prompt in the second terminal window, **execute tcpdump -h**.
 *As with hping3, adding the **-h** switch provides guidance on the available switches and parameters.*
 
-SS29
+<img width="1052" height="705" alt="Screenshot 2025-09-07 173930" src="https://github.com/user-attachments/assets/b910df42-1113-44ad-a34c-0d13e7a26072" />
 
 In the tcpdump window, **execute tcpdump -i eth0 -n host 202.20.1.1** to collect packets as they are transmitted to the IP address 202.20.1.1.
 
-SS30
+<img width="1183" height="707" alt="Screenshot 2025-09-07 174028" src="https://github.com/user-attachments/assets/0692e9b8-bcf2-4440-83f1-eadd906f845e" />
 
 In the hping3 window, **execute hping3 -1 -c 1 202.20.1.1** to send another ICMP packet to the external firewall interface
 
 *In the tcpdump window, you will see tcpdump echo back the captured packets. There are two pairs of packets. The first two packets are the ICMP echo request and the ICMP echo reply. The second pair of packets consists of an Address Resolution Protocol (ARP) request and an ARP reply providing the MAC address of the firewall.*
 
-SS31
+<img width="1082" height="662" alt="Screenshot 2025-09-07 174300" src="https://github.com/user-attachments/assets/b9e28240-208e-4846-acdc-9a27cafcc54b" />
 
-SS32
+<img width="808" height="198" alt="Screenshot 2025-09-07 174347" src="https://github.com/user-attachments/assets/75dbe9d0-796e-44a1-9486-b96be5994f12" />
 
 In the hping3 terminal window, **execute hping3 -S -c 1 -s 5151 202.20.1.1** to send a single (**-c 1**) SYN packet (**-S**), directed to the firewall (**202.20.1.1**) on source port (**-s**) 5151.
 
 *Notice that the tcpdump output shows the SYN packet sent (Flags [S]) from the Kali machine to the firewall, but with no response. The destination port was not listening. Because hping3 is sending the packet without a specified destination port, you should not expect any response.*
 
-SS33
+<img width="782" height="462" alt="Screenshot 2025-09-07 174502" src="https://github.com/user-attachments/assets/85359fd4-6139-4b22-b78b-17f089336d16" />
 
-SS34
+<img width="815" height="215" alt="Screenshot 2025-09-07 174534" src="https://github.com/user-attachments/assets/62eadf5e-40ff-4fd3-941b-9d4ae123aaee" />
 
 In the hping3 window, **type hping3 -S -c 1 -s 5151 -p 80 202.20.1.1** and **press Enter** to send the same packet to a specific destination port (**-p 80**) that should be listening.
 
 *In the tcpdump window, the output shows the attempted three-way handshake. The firewall’s port 80 was listening and responded with a SYN/ACK. In a normal connection request, the third ACK packet would be sent. However, because hping3 did not intend to establish a connection, it instead sent the firewall a reset (R) packet, closing the connection request. Now you know that port 80 is active and listening. You could use this same technique to assess every individual port on a system, but doing so manually would be very tedious and time-consuming, and would be better accomplished by using a tool like Nmap. Nonetheless, it is valuable to observe and understand the transaction and handshake process at the packet level.*
 
-SS35
-SS36
+<img width="1185" height="648" alt="Screenshot 2025-09-07 174613" src="https://github.com/user-attachments/assets/ccbdf976-3649-4781-b4f1-1b73160d825b" />
+
+<img width="896" height="372" alt="Screenshot 2025-09-07 174629" src="https://github.com/user-attachments/assets/d80951dd-dbca-4a68-92fd-91b3911490a4" />
 
 In the hping3 window, **execute exit** to close the window.
 
@@ -571,13 +575,13 @@ At the command prompt, **execute telnet 202.20.1.1 80** to request a telnet conn
   
 *The system will return a message indicating that a Telnet connection was made (connected to 202.20.1.1).*
 
-SS37
+<img width="938" height="562" alt="Screenshot 2025-09-07 174814" src="https://github.com/user-attachments/assets/3bafe2c2-deb0-46f7-ac6a-1617b7d4ccad" />
 
 **Execute get** to return a response from the web service.
 
 *You should be able to see the type and version of the Web server running. This technique for enumerating information about the service running is called banner grabbing.*
 
-SS38
+<img width="943" height="573" alt="Screenshot 2025-09-07 174833" src="https://github.com/user-attachments/assets/21b7f845-c286-45f9-8ef9-ca9e16c55d23" />
 
 End Section 2
 
@@ -595,9 +599,9 @@ we can do so by running:
 ifconfig -a
 ```
 
-SS39
+<img width="1182" height="767" alt="Screenshot 2025-09-07 175159" src="https://github.com/user-attachments/assets/6d7cc75d-81cf-45f5-ba29-2985bffdd2b1" />
 
-SS40
+<img width="1750" height="825" alt="Screenshot 2025-09-07 175312" src="https://github.com/user-attachments/assets/57a89d1b-e58a-4915-b38d-b937be24771c" />
 
 <u>Part 2 - Perform Reconnaissance on the Firewall</u>
 
@@ -608,9 +612,11 @@ Next, you will need to conduct some additional reconnaissance on the firewall it
 - Were any DNS packets sent to the firewall?
 - What ports are open on the pfSense firewall?
 
-SS41
-SS42
-SS43
-SS44
+<img width="1027" height="581" alt="Screenshot 2025-09-07 175913" src="https://github.com/user-attachments/assets/763d9000-f1e0-480b-a910-eb3c3506dfbd" />
+<img width="1207" height="637" alt="Screenshot 2025-09-07 175842" src="https://github.com/user-attachments/assets/05aad2c7-3b8c-4281-9074-262885259a70" />
+<img width="1201" height="692" alt="Screenshot 2025-09-07 175825" src="https://github.com/user-attachments/assets/0bf4df4c-e29b-4e15-954a-63756402b20f" />
+<img width="1122" height="711" alt="Screenshot 2025-09-07 175805" src="https://github.com/user-attachments/assets/fbd391eb-d535-475e-b4ac-74eb368009b4" />
+<img width="1361" height="647" alt="Screenshot 2025-09-07 175743" src="https://github.com/user-attachments/assets/b935c4d6-9fc8-4614-a3a1-f95d45e07b79" />
+
 SS45
 
