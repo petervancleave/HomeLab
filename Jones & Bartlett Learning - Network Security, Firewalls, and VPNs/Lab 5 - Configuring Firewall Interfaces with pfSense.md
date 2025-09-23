@@ -22,6 +22,7 @@ On the vWorkstation desktop, **double-click** the **PFSENSE-FW-PHYSICAL-PLANNER 
 *You will use the tabs on this spreadsheet to document the physical configuration for the pfSense virtual firewall/router appliance. The first item on the General tab is the Hostname.*
 
 SS1
+<img width="1911" height="870" alt="Screenshot 2025-09-21 140608" src="https://github.com/user-attachments/assets/b711286a-abb4-47d3-97fb-cea09f834fd8" />
 
 At the Hostname row, **type _yourname_-pfSense** in the Settings column, replacing _yourname_ with your own name, to give a unique name to this firewall configuration. Do not include spaces when typing your name.
 
@@ -51,10 +52,12 @@ At the Time Zone row, **type Etc/GMT-7** in the Settings column to document that
 At the Admin Password row, **type P&ss9999** in the Settings column.
 
 SS2
+<img width="1915" height="772" alt="Screenshot 2025-09-21 141100" src="https://github.com/user-attachments/assets/81d5cd65-b767-4c37-8cd0-c4b5534e4b43" />
 
 At the bottom of the OpenOffice spreadsheet, **click** the **WAN tab** to define the configuration details for the WAN interface.
 
 SS3
+<img width="1353" height="637" alt="Screenshot 2025-09-21 141239" src="https://github.com/user-attachments/assets/a9e0db15-a4bb-4493-add4-c444d17de99d" />
 
 At the Description row, **type WAN** in the Comments column.
 
@@ -101,6 +104,7 @@ At the Block RFC1918 Networks row, **type Block** in the Settings column.
 At the Block bogon networks row, **type Do not block** in the Settings column.
 
 SS4
+<img width="1915" height="773" alt="Screenshot 2025-09-21 141736" src="https://github.com/user-attachments/assets/ff9471f9-e7fd-47f3-a54a-4a52f104109e" />
 
 **Repeat steps 11-24** for the **LAN tab** in the OpenOffice spreadsheet, using the following values:
 
@@ -125,18 +129,21 @@ SS4
 
 
 SS5
+<img width="1917" height="780" alt="Screenshot 2025-09-21 141938" src="https://github.com/user-attachments/assets/95903a03-a949-49f9-933f-19a2f05f0317" />
 
 <u>Part 2 - Configure the LAN and WAN Firewall Interfaces</u>
 
 From the Virtual Machine menu, **select** **pfSense-in** from the Virtual Machine dropdown menu to connect to the pfSense console.
 
 SS6
+<img width="1045" height="558" alt="Screenshot 2025-09-21 142221" src="https://github.com/user-attachments/assets/d57538f2-989c-41cb-b293-e4a523848d6f" />
 
 At the pfSense console menu, **type 2** and **press Enter** to select the Set interface(s) IP address option.
 
 At the _Enter the number of the interface you wish to configure_ prompt, **type 2** and **press Enter** to select the LAN interface for configuration.
 
 SS7
+<img width="1142" height="546" alt="Screenshot 2025-09-21 142315" src="https://github.com/user-attachments/assets/a48606dd-d0ae-4601-a92d-897e00ee9143" />
 
 At the _Enter the new LAN IPv4 address_ prompt, **type 172.30.0.1** to assign the private address to the LAN interface, as specified in your worksheet.
 
@@ -145,6 +152,7 @@ At the _Enter the new LAN IPv4 address_ prompt, **type 172.30.0.1** to assign th
 At the _Enter the new LAN IPv4 subnet bit count_ prompt, **type 24** to add the subnet mask to the LAN IP address, as specified in your worksheet.
 
 SS8
+<img width="1012" height="587" alt="Screenshot 2025-09-21 142419" src="https://github.com/user-attachments/assets/a0bc70d5-e2cd-4f80-8a4d-9473c3b16c7f" />
 
 At the prompt for an upstream gateway address, **press Enter** to specify none.
 
@@ -161,6 +169,7 @@ From the vWorkstation taskbar, **click** the **Chrome icon** to open a new brow
 In the browser’s navigation bar, **type 172.30.0.1** and **press Enter** to access the pfSense WebGUI.
 
 SS9
+<img width="1897" height="873" alt="Screenshot 2025-09-21 142656" src="https://github.com/user-attachments/assets/bc8bc815-c962-4a6a-af0c-e97c5e971a3c" />
 
 At the pfSense log-in screen, **type** the following credentials and **click Sign in** to log in to the pfSense firewall using the default administrator username and password.  
 
@@ -170,6 +179,7 @@ At the pfSense log-in screen, **type** the following credentials and **click Sig
 From the pfSense menu bar, **click System** and **select Setup Wizard** to open the pfSense Setup Wizard.
 
 SS10
+<img width="1892" height="771" alt="Screenshot 2025-09-21 142940" src="https://github.com/user-attachments/assets/5873fb40-0726-46ea-b965-dfecb41baf43" />
 
 At the pfSense Setup page, **click Next** to proceed to the Netgate Global Support page.
 
@@ -187,6 +197,7 @@ On the General Information page, **type** the following IP addresses for the Pri
 - Secondary DNS Server: **8.8.4.4**
 
 SS11
+<img width="1565" height="607" alt="Screenshot 2025-09-21 143108" src="https://github.com/user-attachments/assets/4fefbb33-5b36-43ab-8690-84682f12ee71" />
 
 On the General Information page, **click** the **Override DNS checkbox** to deselect it.
 
@@ -197,6 +208,7 @@ On the Time Server Information page, **type 0.pfsense.pool.ntp.org** in the Time
 On the Time Server Information page, **select Etc/GMT-7** from the Timezone menu, as specified in your worksheet.
 
 SS12
+<img width="1512" height="436" alt="Screenshot 2025-09-21 143232" src="https://github.com/user-attachments/assets/40fba5f2-df61-44a6-a27c-9922f0d6556a" />
 
 On the Time Server Information page, **click Next** to continue to the Configure WAN Interface page.
 
@@ -205,6 +217,7 @@ On the Configure WAN Interface page, **select** the **Static option** from the S
 In the General configuration section, **leave the MAC Address, MTU, and MSS fields blank**, as specified in your worksheet.
 
 SS13
+<img width="1461" height="582" alt="Screenshot 2025-09-21 143351" src="https://github.com/user-attachments/assets/6acf0407-c990-4aa8-9093-7fb497eb7762" />
 
 In the Static IP Configuration section, **type 202.20.1.1** in the IP address field, as specified in your worksheet.
 
@@ -213,22 +226,26 @@ In the Static IP Configuration section, **select 24** from the Subnet Mask menu,
 In the Static IP Configuration section, **type 202.20.1.2** in the Upstream Gateway field, as specified in your worksheet
 
 SS14
+<img width="1501" height="220" alt="Screenshot 2025-09-21 143627" src="https://github.com/user-attachments/assets/524d492b-24cb-43f3-971a-f00d62bc66bd" />
 
 In the RFC1918 Networks section, **confirm** the **_Block RFC1918 Private Networks_ checkbox is selected**, as specified in your worksheet.
 
 In the Block bogon networks section, **click** the **Block bogon networks checkbox** to deselect it, as specified in your worksheet.
 
 SS15
+<img width="1587" height="396" alt="Screenshot 2025-09-21 143704" src="https://github.com/user-attachments/assets/44f187d9-eee3-4b5d-9ab5-262ace666a05" />
 
 **Click Next** to continue to the Configure LAN Interface page.
 
 On the Configure LAN Interface page, **click Next** to accept the LAN Interface settings you configured from the console and continue to the Set Admin WebGUI Password page.
 
 SS16
+<img width="1581" height="378" alt="Screenshot 2025-09-21 143739" src="https://github.com/user-attachments/assets/9999ca3b-b81e-4442-89cd-f10203a524a3" />
 
 On the Set Admin WebGUI Password page, **type P&ss9999** in both the Admin Password and Admin Password AGAIN fields, then **click Next** to save the password change and continue to the Reload configuration page.
 
 SS17
+<img width="1363" height="351" alt="Screenshot 2025-09-21 143818" src="https://github.com/user-attachments/assets/7f2e5a06-b1b7-4061-9e6a-c8a60d043e6f" />
 
 On the Reload configuration page, **click Reload** to reload pfSense with your changes.
 
@@ -241,6 +258,7 @@ From the vWorkstation taskbar, **click** the **Command Prompt icon** to open a n
 At the command prompt, **type ping 202.20.1.2** and **press Enter** to send an ICMP request to pfSense’s upstream gateway.
 
 SS18
+<img width="1475" height="587" alt="Screenshot 2025-09-21 144853" src="https://github.com/user-attachments/assets/c312baa3-94c3-4665-8f50-058baafee8c4" />
 
 At the command prompt, **type exit** and **press Enter** to close the command prompt window.
 
@@ -253,6 +271,7 @@ From the RemoteWindows01 taskbar, **click** the **Command Prompt icon** to open 
 At the command prompt, **type ping 202.20.1.1** and **press Enter** to send an ICMP request to the WAN interface of the pfSense firewall.
 
 SS19
+<img width="1395" height="617" alt="Screenshot 2025-09-21 145018" src="https://github.com/user-attachments/assets/4809a167-6ace-4d58-8b6f-d82a77387012" />
 
 # Section 2
 
@@ -276,6 +295,7 @@ On the DMZ tab, **document** the following physical configuration settings.
 - Block bogon networks: **No**
 
 SS20
+<img width="1552" height="707" alt="Screenshot 2025-09-21 145221" src="https://github.com/user-attachments/assets/8da187e0-02dd-4f19-bb52-30d3e76b0b8f" />
 
 <u>Part 2 - Configure the DMZ Firewall Interface</u>
 
@@ -294,14 +314,17 @@ In the General Configuration section, **click** the **Enable checkbox** to enabl
 Use the details from the DMZ tab of your planner to **complete** the **configuration**, then **click Save**.
 
 SS21
+<img width="1446" height="663" alt="Screenshot 2025-09-21 145717" src="https://github.com/user-attachments/assets/cfcc2083-9f41-4d86-b850-44be400508a9" />
 
 SS22
+<img width="1628" height="617" alt="Screenshot 2025-09-21 145729" src="https://github.com/user-attachments/assets/0b445c96-1edb-4932-a094-94424f60a9d4" />
 
 When prompted, **click Apply Changes** to apply your changes.
 
 **Navigate** to the **pfSense dashboard**.
 
 SS23
+<img width="1495" height="612" alt="Screenshot 2025-09-21 151831" src="https://github.com/user-attachments/assets/b29f96a8-d9a3-48db-b073-a534a36f13ba" />
 
 <u>Part 3 - Verify the Firewall Implementation</u>
 
@@ -316,6 +339,7 @@ ping 172.40.0.1
 ```
 
 SS24
+<img width="1322" height="577" alt="Screenshot 2025-09-21 151943" src="https://github.com/user-attachments/assets/19955a7d-9c15-419d-b9c9-9d45fdbdb644" />
 
 From the RemoteWindows01 desktop, **open** a new **browser window**.
 
@@ -324,4 +348,5 @@ In the web browser, **navigate** to **corporationtechs.com**.
 *Corporationtechs.com is a website hosted on the TargetLinux01 web server. Since a rule exists that permits traffic into the DMZ, if your DMZ interface was properly configured, the website should load without any issues.*
 
 SS25
+<img width="1886" height="772" alt="Screenshot 2025-09-21 152034" src="https://github.com/user-attachments/assets/309ff19e-e7f1-42cc-99ab-5849462887ef" />
 
