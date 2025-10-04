@@ -1,1 +1,1 @@
-# Home Labs
+# Home Lab
