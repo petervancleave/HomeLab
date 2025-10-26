@@ -6,9 +6,9 @@ def factor_rsa_modulus(n)
   end
 end
 
-# example usage
+# ex
 n = 20 # n = p * q (RSA modulus, small example)
 factors = factor_rsa_modulus(n)
 puts "Factors of #{n}: #{factors[0]}, #{factors[1]}"
 
-# factorization-based RSA key cracker. use to crack weak RSA keys in CTF
+# factorization based RSA key cracker
